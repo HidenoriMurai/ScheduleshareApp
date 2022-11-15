@@ -6,7 +6,7 @@ CREATE TABLE schedule (
     title VARCHAR(30) NOT NULL,
     scheduletime　DATE　NOT NULL,
     location　VARCHAR(50) NOT NULL,
-    contents VARCHAR(300) NOT NULL
+    contents VARCHAR(300) NOT NULL,
     PRIMARY KEY (id)
 );
 
