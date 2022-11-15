@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+  db:
+    build: ./docker/db/
+    container_name: data-mysql
+    platform: linux/x86_64
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: $MYSQL_ROOT_PASSWORD
+      MYSQL_DATABASE: schedule_management
+      MYSQL_USER: $MYSQL_USER
+      MYSQL_PASSWORD: $MYSQL_PASSWORD
+    ports:
+      - 3306:3306
+    volumes:
+      - ./docker/db/initdb.d:/docker-entrypoint-initdb.d
+      - docker-mysql-volume:/var/lib/mysql
+volumes:
+  docker-mysql-volume:
