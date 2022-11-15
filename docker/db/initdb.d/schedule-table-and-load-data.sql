@@ -10,4 +10,4 @@ CREATE TABLE schedule (
     PRIMARY KEY (id)
 );
 
-INSERT INTO schedule (created_at,title,scheduletime,location,contents) VALUES ('20221111','タイトル','20221231','伊勢神宮','初詣に向かいたいと思います。');
+INSERT INTO schedule (created_at,title,scheduletime,location,contents) VALUES ('2022-11-11','タイトル','2022-12-31','伊勢神宮','初詣に向かいたいと思います。');
