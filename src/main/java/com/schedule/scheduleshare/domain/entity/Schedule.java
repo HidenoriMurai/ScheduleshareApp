@@ -13,9 +13,9 @@ public class Schedule {
 
     private String title;
 
-    private String location;
-
     private Date scheduleDate;
+
+    private String location;
 
     private String content;
 
