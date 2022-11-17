@@ -6,8 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class ScheduleshareApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(ScheduleshareApplication.class, args);
-	}
-
+    public static void main(String[] args) {
+        SpringApplication.run(ScheduleshareApplication.class, args);
+    }
 }

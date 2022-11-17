@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>スケジュール一覧　｜　スケジュール管理アプリケーション</title>
+</head>
+<body>
+<h1>スケジュール一覧</h1>
+<table>
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>タイトル</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="schedule : ${scheduleList}">
+        <th th:text="${schedule.id}">(id)</th>
+        <td th:text="${schedule.title}">(title)</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
