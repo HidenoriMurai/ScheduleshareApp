@@ -11,13 +11,13 @@ public class Schedule {
 
     private int id;
 
-    private Date register_date;
-
     private String title;
 
     private String location;
 
-    private Date schedule_date;
+    private Date scheduleDate;
 
     private String content;
+
+    private Date registerDate;
 }
